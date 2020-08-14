@@ -1,5 +1,5 @@
 <style>
-    #info-container {
+    .info-container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -13,7 +13,7 @@
         background-repeat: no-repeat;
     }
 
-    #info-container > div {
+    .info-container > div {
         background: rgba(0, 0, 0, 0.8);
         width: 90%;
         max-width: 420px;
@@ -21,22 +21,22 @@
         text-align: center;
     }
 
-    #info-container > div > h4 {
+    .info-container > div > h4 {
         font-weight: 700;
         font-size: 1.8rem;
     }
 
-    #meny-container {
+    .meny-container {
         margin: 50px 0;
     }
 
-    #meny-container > .row {
+    .meny-container > .row {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
 
-    #meny-container > .row > div {
+    .meny-container > .row > div {
         margin-top: 15px;
         height: 350px;
         width: calc(50% - 30px);
@@ -51,43 +51,42 @@
         align-items: center;
     }
 
-    #food-container {
+    .food-container {
         background-image: url('/images/food.png');
     }
 
-    #drink-container {
+    .drink-container {
         background-image: url('/images/drink.png');
     }
 
-    #dessert-container {
+    .dessert-container {
         background-image: url('/images/dessert.png');
     }
 
-    #ice-cream-container {
+    .ice-cream-container {
         background-image: url('/images/ice-cream.png');
     }
 
-    #meny-container > .row > div > a {
+    .meny-container > .row > div > a {
         background: rgba(0, 0, 0, 0.8);
         width: 10rem;
         height: 10rem;
         text-decoration: none;
-
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    #meny-container > .row > div > a:hover {
+    .meny-container > .row > div > a:hover {
         background: rgba(0, 0, 0, 0.7);
     }
 
-    #meny-container > .row > div > a > h4 {
+    .meny-container > .row > div > a > h4 {
         font-size: 2rem;
     }
 
     @media (max-width: 800px) {
-        #meny-container > .row > div {
+        .meny-container > .row > div {
             width: 100%;
         }
     }
@@ -97,7 +96,7 @@
     <title>The Coffee Lounge</title>
 </svelte:head>
 
-<section id="info-container">
+<section class="info-container">
     <div>
         <h4>The Coffee Lounge</h4>
         <h4>
@@ -107,26 +106,26 @@
         </h4>
     </div>
 </section>
-<section id="meny-container">
+<section class="meny-container">
     <div class="row">
-        <div id="food-container">
+        <div class="food-container">
             <a href="/mat">
                 <h4>Mat</h4>
             </a>
         </div>
-        <div id="drink-container">
+        <div class="drink-container">
             <a href="/dryck">
                 <h4>Dryck</h4>
             </a>
         </div>
     </div>
     <div class="row">
-        <div id="dessert-container">
+        <div class="dessert-container">
             <a href="/fika">
                 <h4>Fika</h4>
             </a>
         </div>
-        <div id="ice-cream-container">
+        <div class="ice-cream-container">
             <a href="/glass">
                 <h4>Glass</h4>
             </a>
