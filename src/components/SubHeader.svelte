@@ -1,6 +1,6 @@
 <script>
-    export let title;
-    export let description;
+    export let title = undefined;
+    export let description = undefined;
 </script>
 
 <style>
@@ -19,6 +19,10 @@
 </style>
 
 <section>
-    <h3>{title}</h3>
-    <p>{description}</p>
+    {#if title}
+        <h3>{title}</h3>
+    {/if}
+    {#if description}
+        <p>{description}</p>
+    {/if}
 </section>
