@@ -7,21 +7,29 @@
         height: 90vh;
         min-height: 90vh;
 
-        background-image: url('/images/girl.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
 
-    .info-container > div {
+    .info-container.company-lunch {
+        background-image: url('/images/company.png');
+    }
+
+    .info-container.take-away {
+        background-image: url('/images/girl.png');
+    }
+
+    .info-container > div, .info-container > a {
         background: rgba(0, 0, 0, 0.8);
         width: 90%;
         max-width: 420px;
         height: 30vh;
         text-align: center;
+        text-decoration: none;
     }
 
-    .info-container > div > h4 {
+    .info-container > div > h4, .info-container > a > h4 {
         font-weight: 700;
         font-size: 1.8rem;
     }
@@ -96,16 +104,19 @@
     <title>The Coffee Lounge</title>
 </svelte:head>
 
-<section class="info-container">
-    <div>
-        <h4>The Coffee Lounge</h4>
+<section class="info-container company-lunch">
+    <a href="/lunch-foretag">
         <h4>
-            Take Away
-            <br />
-            076-0047267
+            Företagslunch
         </h4>
-    </div>
+        <h4>
+            Klicka för att
+            <br>
+            beställa.
+        </h4>
+    </a>
 </section>
+
 <section class="meny-container">
     <div class="row">
         <div class="food-container">
@@ -130,5 +141,16 @@
                 <h4>Glass</h4>
             </a>
         </div>
+    </div>
+</section>
+
+<section class="info-container take-away">
+    <div>
+        <h4>The Coffee Lounge</h4>
+        <h4>
+            Take Away
+            <br />
+            076-0047267
+        </h4>
     </div>
 </section>
