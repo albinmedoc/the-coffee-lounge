@@ -22,7 +22,7 @@
     nav {
         /* 100% - logo_size */
         width: calc(100% - 100px);
-        z-index: 10;
+        z-index: 3;
     }
 
     nav > :global(button) {
