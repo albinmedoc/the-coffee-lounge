@@ -29,6 +29,10 @@
         text-decoration: none;
     }
 
+    .info-container > a:hover {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
     .info-container > div > h4, .info-container > a > h4 {
         font-weight: 700;
         font-size: 1.8rem;
