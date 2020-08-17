@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "the-coffee-lounge",
+  "description": "Website for the company 'The Coffee Lounge' in Sweden.",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
