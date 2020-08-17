@@ -107,7 +107,7 @@
             <li>
                 <a
                     rel="prefetch"
-                    aria-current={segment === undefined ? 'page' : undefined}
+                    aria-current={segment === 'mat' ? 'page' : undefined}
                     href="mat">
                     Mat
                 </a>
