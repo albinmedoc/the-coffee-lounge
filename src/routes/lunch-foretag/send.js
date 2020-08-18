@@ -15,8 +15,8 @@ export function post(req, res) {
     );
 
     const mailOptions = {
-        from: '"Lunch Företag" <lunch-foretag@the-coffeelounge.se>',
-        to: 'stamline203@gmail.com',
+        from: '"The Coffee Lounge" <noreply@the-coffeelounge.se>',
+        to: 'lunch-foretag@the-coffeelounge.se',
         subject: `Företagslunch - ${company_name}`,
         text: `Företagslunch till ${company_name}\n\nAdress: ${address}\n\nTelefonnummer: ${phonenumber}\n\nBeställning:\n${order}`,
     };
