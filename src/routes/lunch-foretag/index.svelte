@@ -64,6 +64,10 @@
     }
 </style>
 
+<svelte:head>
+    <title>Företagslunch - The Coffee Lounge</title>
+</svelte:head>
+
 <div>
     <SubHeader title="Lunch för företag" />
     <Form on:submit={handleSubmit}>
