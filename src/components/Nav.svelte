@@ -66,7 +66,6 @@
         nav {
             position: absolute;
             width: 100vw;
-            height: calc(100vh - 164px);
             top: 164px;
             left: 0;
         }
@@ -81,7 +80,9 @@
         nav > ul {
             display: none;
         }
-
+        nav.is-active {
+            height: calc(100vh - 164px);
+        }
         nav.is-active > ul {
             display: block !important;
             background-color: #000;
