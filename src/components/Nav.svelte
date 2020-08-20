@@ -2,7 +2,13 @@
     import HamburgerButton from './HamburgerButton.svelte';
 	export let segment;
 	
-	let active = false;
+    let active = false;
+
+    function hide(){
+        active = false;
+    }
+    
+    $:  hide(segment);
 </script>
 
 <style>
