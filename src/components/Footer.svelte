@@ -34,4 +34,7 @@
         <h4>Öppettider</h4>
         <p>Måndag-Söndag: 11-18</p>
     </section>
+    <section>
+        <p><a href="tel:076-0047267">076-0047267</a></p>
+    </section>
 </footer>
