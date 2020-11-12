@@ -32,6 +32,7 @@
     </section>
     <section>
         <h4>Öppettider</h4>
-        <p>Måndag-Söndag: 11-18</p>
+        <p>Måndag-Fredag: 11-18</p>
+        <p>Lördag-Söndag: 9-16</p>
     </section>
 </footer>
