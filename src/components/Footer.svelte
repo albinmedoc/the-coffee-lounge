@@ -35,4 +35,7 @@
         <p>Måndag-Fredag: 11-18</p>
         <p>Lördag-Söndag: 9-16</p>
     </section>
+    <section>
+        <p><a href="tel:076-0047267">076-0047267</a></p>
+    </section>
 </footer>
