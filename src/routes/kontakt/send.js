@@ -5,10 +5,10 @@ export function post(req, res) {
     console.log(req.body);
 
     // Load data
-    const name = req.body.order;
-    const email = req.body.address;
-    const subject = req.body.phonenumber;
-    const message = req.body.company_name;
+    const name = req.body.name;
+    const email = req.body.email;
+    const subject = req.body.subject;
+    const message = req.body.message;
 
     const transporter = nodemailer.createTransport(
         `smtps://${process.env.EMAIL_USER}:${process.env.EMAIL_PASSWORD}@${process.env.EMAIL_HOST}`

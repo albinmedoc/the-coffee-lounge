@@ -7,6 +7,9 @@
         autoresize,
     } from 'svelte-responsive-form';
 
+    import { getNotificationsContext } from 'svelte-notifications';
+    const { addNotification } = getNotificationsContext();
+
     let name,
         email,
         subject,
