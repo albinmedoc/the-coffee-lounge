@@ -1,7 +1,7 @@
 <script>
     export let active;
 
-    function toggle(){
+    function toggle() {
         active = !active;
     }
 </script>
@@ -91,8 +91,9 @@
     }
 </style>
 
-<button class="hamburger hamburger--slider {active ? 'is-active' : ''}" type="button" on:click="{toggle}">
-    <span class="hamburger-box">
-        <span class="hamburger-inner" />
-    </span>
+<button
+    class="hamburger hamburger--slider {active ? 'is-active' : ''}"
+    type="button"
+    on:click={toggle}>
+    <span class="hamburger-box"> <span class="hamburger-inner" /> </span>
 </button>

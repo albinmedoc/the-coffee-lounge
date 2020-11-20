@@ -33,6 +33,9 @@
 
     nav > :global(button) {
         display: none;
+        position: absolute;
+        top: -100px;
+        right: 32px;
     }
 
     nav > ul {
@@ -77,10 +80,7 @@
         }
 
         nav > :global(button) {
-            display: block;
-            position: absolute;
-            top: -100px;
-            right: 32px;
+            display: inline-block;
         }
 
         nav > ul {
