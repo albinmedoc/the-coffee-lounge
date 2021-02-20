@@ -108,7 +108,7 @@
     <title>The Coffee Lounge</title>
 </svelte:head>
 
-<section class="info-container company-lunch">
+<!-- <section class="info-container company-lunch">
     <a href="/lunch-foretag">
         <h4>
             Företagslunch
@@ -117,6 +117,19 @@
             Klicka för att
             <br>
             beställa.
+        </h4>
+    </a>
+</section> -->
+
+<section class="info-container company-lunch">
+    <a href="/lunch-bestall">
+        <h4>
+            Lunch
+        </h4>
+        <h4>
+            Klicka för att
+            <br>
+            beställa hem.
         </h4>
     </a>
 </section>
