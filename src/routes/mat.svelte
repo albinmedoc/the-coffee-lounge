@@ -20,5 +20,5 @@
 
 <SubHeader
     title="Matmeny"
-    description="Dagens lunch alla vardagar kl. 11-14, 79kr (inkl. bryggkaffe)." />
+    description="Lunch alla dagar mellan kl. 11-14, 79kr (inkl. bryggkaffe)." />
 <Menu {images} />
