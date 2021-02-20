@@ -47,6 +47,81 @@
     }
 </script>
 
+<svelte:head>
+    <title>Beställ lunch - The Coffee Lounge</title>
+</svelte:head>
+
+<div>
+    <SubHeader title="Beställ lunch" />
+    <Form on:submit={handleSubmit}>
+        <FormRow>
+            <InputContainer>
+                <p class="info">
+                    Beställning måste ske senast kl 11 samma dag som önskad
+                    leverans.
+                </p>
+                <p class="info">
+                    Leverans kommer att ske mellan kl 11.30 & 12.15 (OBS, endast
+                    vardagar).
+                </p>
+                <p class="info">
+                    Utkörning sker endast inom Staffanstorp (OBS, ingen extra
+                    avgift).
+                </p>
+            </InputContainer>
+        </FormRow>
+        <FormRow>
+            <InputContainer label="Namn">
+                <input
+                    bind:value={name}
+                    type="text"
+                    placeholder="
+                    "
+                    required
+                />
+            </InputContainer>
+        </FormRow>
+        <FormRow>
+            <InputContainer label="Telefonnummer">
+                <input
+                    bind:value={phonenumber}
+                    type="tel"
+                    placeholder="
+                    "
+                    required
+                />
+            </InputContainer>
+        </FormRow>
+        <FormRow>
+            <InputContainer label="Adress">
+                <input
+                    bind:value={address}
+                    type="text"
+                    placeholder="
+                    "
+                    required
+                />
+            </InputContainer>
+        </FormRow>
+        <FormRow>
+            <InputContainer label="Beställning">
+                <textarea
+                    use:autoresize
+                    bind:value={order}
+                    placeholder="
+                    "
+                    required
+                />
+            </InputContainer>
+        </FormRow>
+        <FormRow>
+            <InputContainer>
+                <input type="submit" value="Skicka" />
+            </InputContainer>
+        </FormRow>
+    </Form>
+</div>
+
 <style>
     div :global(label) {
         color: #000;
@@ -63,73 +138,3 @@
         color: #fff;
     }
 </style>
-
-<svelte:head>
-    <title>Beställ lunch - The Coffee Lounge</title>
-</svelte:head>
-
-<div>
-    <SubHeader title="Beställ lunch"/>
-    <Form on:submit={handleSubmit}>
-        <FormRow>
-            <InputContainer>
-                <p class="info">
-                    Beställning måste ske senast kl 11 samma dag som önskad
-                    leverans.
-                </p>
-                <p class="info">
-                    Leverans kommer att ske mellan kl 11.30 & 12.15.
-                </p>
-                <p class="info">
-                    Utkörning sker endast inom Staffanstorp (OBS, ingen extra
-                    avgift).
-                </p>
-            </InputContainer>
-        </FormRow>
-        <FormRow>
-            <InputContainer label="Namn">
-                <input
-                    bind:value={name}
-                    type="text"
-                    placeholder="
-                    "
-                    required />
-            </InputContainer>
-        </FormRow>
-        <FormRow>
-            <InputContainer label="Telefonnummer">
-                <input
-                    bind:value={phonenumber}
-                    type="tel"
-                    placeholder="
-                    "
-                    required />
-            </InputContainer>
-        </FormRow>
-        <FormRow>
-            <InputContainer label="Adress">
-                <input
-                    bind:value={address}
-                    type="text"
-                    placeholder="
-                    "
-                    required />
-            </InputContainer>
-        </FormRow>
-        <FormRow>
-            <InputContainer label="Beställning">
-                <textarea
-                    use:autoresize
-                    bind:value={order}
-                    placeholder="
-                    "
-                    required />
-            </InputContainer>
-        </FormRow>
-        <FormRow>
-            <InputContainer>
-                <input type="submit" value="Skicka" />
-            </InputContainer>
-        </FormRow>
-    </Form>
-</div>
